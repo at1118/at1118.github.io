@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'annifontitalic';
+    src: url('../fonts/annifont-webfont.eot');
+    src: url('../fonts/annifont-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/annifont-webfont.woff2') format('woff2'),
+         url('../fonts/annifont-webfont.woff') format('woff'),
+         url('../fonts/annifont-webfont.ttf') format('truetype'),
+         url('../fonts/annifont-webfont.svg#annifontitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {color:#404040; font-size:15px; font-family:Verdana, Geneva, sans-serif; /*background:url(../images/temp-bg7.jpg) no-repeat center 0;*/}
+
+.navbar-brand {margin-top: 50px;}
+.navbar-brand img { max-width: 313px;}
+
+.navbar-default {
+background-color: transparent;
+border-color: transparent;
+}
+
+.navbar-nav.navbar-right:last-child {margin-top: 41px;}
+.navbar-default .navbar-nav>li>a { font-size:16px; color:#404040;padding-top: 0; text-align:center;}
+@media (min-width: 768px) {
+.navbar-nav>li {float: none;}
+}
+.navbar-collapse {position: fixed;right: 61px;top: 0;}
+.item .navbar-collapse {top: -15px;right: 69px;z-index: 1040;}
+.item .navbar-collapse a {color: #404040;font-size: 16px;background: #fff;padding: 0;margin: 10px 15px 20px;width: 91px;}
+.item .navbar-collapse a:hover {opacity: .8;}
+.container .navbar-collapse {margin-top: 35px;}
+
+h1, .h1, h2, .h2, h3, .h3 { text-align:center;}
+.introducing {font-family: 'annifontitalic'; font-size:23px; font-weight:normal; text-align:center;margin-bottom: 35px;}
+h3, .h3 {font-size: 20px; text-align:center;}
+
+.slide-wrap {margin-top: -66px;min-height: 629px;padding-top: 207px;padding-left: 174px; position:relative;}
+.slide-content {}
+
+.slide-1 h1 { font-size:23px;margin-bottom: 43px;}
+.slide-1 h1 {color:#d8043e;}
+.slide-1 h1 +p {margin-bottom: 43px;line-height: 2.4em;}
+.slide-1 h1 +p +P {color:#d8043e;font-size: 18px;}
+.slide-1 p {margin: 0 0 -15px;}
+.slide-1 .sidebar-caption { position:absolute; left: 50%;margin-left: -335px;top:305px;font-family: 'annifontitalic'; font-size:36px;color: #d8043e;}
+.slide-1 .carousel-caption {padding-left: 74px;}
+.slide-1 #footer {font-size: 14px;color: #808080;line-height: 1.3em;margin-top: -27px;}
+.slide-1 #footer p.pull-right {padding-top: 9px;color: #404040;position: relative;}
+
+.slide-2 .carousel-caption {bottom: 183px;padding-left: 40px;margin-top: -491px;}
+.slide-2 .introducing +h2 {margin-bottom: 34px;}
+.slide-2 h3 {margin-bottom: 26px;letter-spacing: -.043em;}
+
+.slide-2 h1,
+.slide-2 h2,
+.slide-2 h3 {
+	color:#d8043e;
+	}
+
+.slide-3 .carousel-caption {bottom: 133px;margin:-545px 149px 0 auto;width: 564px;}
+.slide-3 .sidebar-caption { position:absolute;  top:314px;font-size:18px;margin: 0;line-height: 1.18; font-weight:normal;left:50%;margin-left: -336px;color: #d8043e;}
+.slide-3 .animation-btn {margin-bottom: 38px;padding-right: 22px;}
+
+.slide-4 .carousel-caption {margin: -611px 150px 0 auto;bottom: 133px;width: 564px;}
+.slide-4 .sidebar-caption { position:absolute; left:53px; top:305px;font-size:18px;margin: 0;line-height: 1.18; font-weight:normal;width: 140px;text-align: left;left: 50%;margin-left: -336px;color: #d8043e;}
+.slide-4 .animation-btn {margin-top: -105px;padding-left: 240px;}
+.slide-4 h3 {margin-left: 127px;margin-right: 149px;margin-bottom: 32px;line-height: 1.18;}
+.slide-4 ul {margin-bottom: 38px;}
+
+.slide-5 .carousel-caption {margin: -611px 150px 0 auto;bottom: 133px;width: 564px;}
+.slide-5 .sidebar-caption {position: absolute;left: 53px;top: 305px;font-size: 18px;margin: 0;line-height: 1.18;font-weight: normal;width: 116px;left: 50%;margin-left: -336px;color: #d8043e;}
+.slide-5 .animation-btn {margin-top: -105px;padding-left: 240px;}
+.slide-5 h3 {margin-left: 127px;margin-right: 149px;margin-bottom: 90px;line-height: 1.18;}
+.slide-5 ul {margin-bottom: 38px;}
+
+.slide-6 .carousel-caption {margin: -611px 150px 0 auto;bottom: 133px;width: 564px;}
+.slide-6 .sidebar-caption {position: absolute;left: 53px;top: 305px;font-size: 18px;margin: 0;line-height: 1.18;font-weight: normal;width: 180px;left: 50%;margin-left: -336px;color: #d8043e;}
+.slide-6 .animation-btn {margin-top: -105px;padding-left: 240px;}
+.slide-6 h3 {margin-left: 127px;margin-right: 149px;margin-bottom: 62px;line-height: 1.18;}
+.slide-6 ul {margin-bottom: 38px;}
+
+.slide-7 .carousel-caption {margin: -482px 290px 0 auto;bottom: 133px;width: 305px;}
+.slide-7 .sidebar-caption {position: absolute;left: 53px;top: 314px;font-size: 18px;margin: 0;line-height: 1.18;font-weight: normal;left: 50%;margin-left: -335px;}
+.slide-7 h2 { font-size:22px;margin-bottom: 23px;}
+.slide-7 .carousel-caption div { font-size:18px; text-align:left;line-height: 1.25;margin-bottom: 22px;}
+.slide-7 .carousel-caption .email { text-align: center;}
+.slide-7 .carousel-caption .email a { color: #404040;}
+.slide-7 .carousel-caption .email a:hover { opacity:.8;}
+.slide-7 .carousel-caption div.phnumber {margin-bottom: 7px;}
+
+.carousel .item a:hover { text-decoration:none;}
+.nav>li>a:hover, .nav>li>a:focus {background-color: #fff;}
+.carousel-caption ul li {line-height: 1.2;margin-bottom: 4px;text-align: left;}
+.carousel-caption ul li, .carousel-caption p {letter-spacing: -.043em;}
+.animation-btn {text-align:center;}
+.animation-btn a {color:#d8043e;font-family: 'annifontitalic'; font-size:20px; outline:none; text-decoration:none;}
+.sidebar-caption {color: #181818;}
+
+.text-muted {color: #404040;position: relative;}
+	
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 640px;
+  margin-bottom: 60px;
+  margin-top: -66px;
+  clear: both;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 640px;
+  text-align:center;
+}
+.carousel-inner > .item > img { display: inline;}
+.carousel-caption {text-shadow: none;color: #404040;width: 819px;position: static;margin: -509px 72px 0 auto;}
+.carousel-control.right,
+.carousel-control.left {
+	background:none;
+	background-color:transparent;
+	}
+.carousel-control:hover, .carousel-control:focus { opacity:1;}
+.glyphicon-chevron-right:before {
+	content: "Next";
+	display: block;
+	background: url(../images/slide-arrows.png) left top no-repeat;
+	height: 163px;
+	width: 130px;
+	text-shadow: none;
+	color: #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 19px;
+	line-height: 165px;
+	text-align: right;
+	}
+.glyphicon-chevron-left:before {
+	content: "Back";
+	display: block;
+	background: url(../images/slide-arrows.png) right -161px no-repeat;
+	height: 163px;
+	width: 130px;
+	text-shadow: none;
+	color: #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 19px;
+	line-height: 162px;
+	text-align: left;
+	}
+
+.carousel-control {width: 10%;}
+	
+.carousel-control:hover .glyphicon-chevron-left:before,
+.carousel-control:focus .glyphicon-chevron-left:before {
+	background-position:right bottom;
+	}
+.carousel-control:hover .glyphicon-chevron-right:before,
+.carousel-control:focus .glyphicon-chevron-right:before {
+	background-position:left -326px;
+	}
+
+.carousel-control:hover .glyphicon-chevron-left:before,
+.carousel-control:focus .glyphicon-chevron-left:before,
+.carousel-control:hover .glyphicon-chevron-right:before,
+.carousel-control:focus .glyphicon-chevron-right:before {
+	color:#d8043e;
+	}
+	
+@media screen and (min-width: 768px) {
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+width:130px;
+height:163px;
+margin-top: -76px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.slide-3 .carousel-caption,
+.slide-4 .carousel-caption,
+.slide-5 .carousel-caption,
+.slide-6 .carousel-caption {
+	margin-right:-11px;
+	margin-left:217px;
+}
+}
+
+@media (max-width: 1024px) {
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+		
+		}
+	.glyphicon-chevron-left:before {
+		content: "";
+		width: auto;
+		background-size: 52px auto;
+		background-position:right -106px;
+		height: 100px;
+		}
+	.glyphicon-chevron-right:before {
+		content: "";
+		width: auto;
+		background-size: 52px auto;
+		background-position:left -3px;
+		height: 100px;
+		}
+	.carousel-control:hover .glyphicon-chevron-right:before, .carousel-control:focus .glyphicon-chevron-right:before {background-position: left -212px;}
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+		height: 100px;
+		width: 52px;
+		margin-top: -43px;
+		}
+		
+	.item .navbar-collapse a {font-size: 15px; margin-bottom:10px;}
+		
+	h1, .h1 {font-size: 25px;}
+	h3, .h3 {font-size: 18px;}
+	
+	.slide-1 .carousel-caption {padding-left: 142px; margin-top:-503px;}
+	.slide-1 h1 {font-size: 22px;}
+	.slide-1 h1 +p +P {font-size: 17px;}
+	
+	.slide-2 .carousel-caption {padding-left: 100px;margin-top: -469px;}
+	
+	.introducing {font-size: 22px;}
+		
+	.slide-3 .carousel-caption,
+	.slide-4 .carousel-caption,
+	.slide-5 .carousel-caption,
+	.slide-6 .carousel-caption {
+		width: 514px;
+		}
+	.slide-7 .carousel-caption {
+		margin-right:72px
+		}
+	
+	h3, .h3 {font-size: 19px;}
+	
+	.slide-4 h3 {margin-bottom: 55px;}
+	.slide-5 h3 {margin-bottom: 107px;}
+	.slide-6 h3 {margin-bottom: 80px;}
+	
+	.slide-4 h3,
+	.slide-5 h3,
+	.slide-6 h3 {
+		margin-left: 147px;
+		margin-right: 129px;
+		}
+	.animation-btn a {font-size: 19px;}
+		
+	.slide-3 .animation-btn {
+		padding-left: 22px;
+		padding-right: 0;
+		margin-bottom: 48px;
+		}
+	.slide-4 .animation-btn,
+	.slide-5 .animation-btn,
+	.slide-6 .animation-btn {
+		padding-left: 260px;
+		}
+		
+	.slide-7 h2 {font-size: 21px;}
+	.slide-7 .carousel-caption div {font-size: 17px;}
+	
+	.navbar-brand img {max-width: 264px;}
+
+	body {font-size: 14px;}
+	}
+	@media (min-width: 769px) and (max-width: 1024px) {
+	.slide-1 .carousel-caption {padding-left: 277px;}
+	.slide-2 .carousel-caption {padding-left: 255px;}
+	.slide-3 .carousel-caption,
+	.slide-4 .carousel-caption,
+	.slide-5 .carousel-caption,
+	.slide-6 .carousel-caption {
+		margin-right:-11px;
+		margin-left:328px;
+		}
+	.slide-7 .carousel-caption {margin-right: 188px;}
+		}
+		@media (max-width: 991px){
+		.slide-1 .carousel-caption {padding-left: 142px;}
+		.slide-2 .carousel-caption {padding-left: 100px;}
+		.slide-3 .carousel-caption {margin-left: auto;}
+		.slide-4 .carousel-caption {margin-left: auto;}
+		.slide-5 .carousel-caption {margin-left: auto;}
+		.slide-6 .carousel-caption {margin-left: auto;}
+		.slide-7 .carousel-caption {margin-right: 72px;}
+		}
+	
+	@media (max-width: 600px) {
+	.slide-3 .carousel-caption,
+	.slide-4 .carousel-caption,
+	.slide-5 .carousel-caption,
+	.slide-6 .carousel-caption {
+		margin-right:-11px;
+		margin-left:327px;
+		}
+	.slide-7 .carousel-caption {margin-left: 447px;}
+	.slide-1 .carousel-caption {padding-left: 252px;}
+	.slide-2 .carousel-caption {padding-left: 172px;}
+		}
+	
+.modal-dialog.modal-lg-tk {width: 722px;}
+.modal-content {overflow: hidden;}
+
+div#html5-watermark { display:none !important;}
+.html5boxVideoControlsBg,
+.html5boxVolumeBar {
+	background-color: rgba(0, 0, 0, .5) !important;
+	}
+.html5boxSeeker,
+.html5boxSeekerBuffer {
+	background-color: rgba(0, 0, 0, .2) !important;
+	}
+
+
+/* footer */
+#footer {background-color: transparent;}
+
+
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {}
+
+/* Demonstrate the grids */
+.col-xs-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+
+/* IE fix non responsive fix */
+.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{width:777px \9;width:777px;max-width:777px;}
