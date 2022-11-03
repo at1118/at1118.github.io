@@ -1,185 +1,265 @@
-<?php
+<!doctype html>
 
-// Include packages and files for PHPMailer and SMTP protocol
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'PHPMailer-master/src/Exception.php';
-require 'PHPMailer-master/src/PHPMailer.php';
-require 'PHPMailer-master/src/SMTP.php';
-
-// Initialize PHP mailer, configure to use SMTP protocol and add credentials
-
-$mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->Mailer = "smtp";
-
-$mail->SMTPDebug  = 0;
-$mail->SMTPAuth   = TRUE;
-$mail->SMTPSecure = "ssl";
-$mail->Port       = 465;
-$mail->Host       = "smtp.gmail.com";
-$mail->Username   = "eclassroom1999@gmail.com";
-$mail->Password   = "gxptrkpjfvmrqbce";
-
-
-$success = "";
-$error = "";
-$name = $message = $email = "";
-$errors = array('name' => '', 'email' => '', 'message' => '');
-
-if (isset($_POST["submit"])) {
-    if (empty(trim($_POST["name"]))) {
-        $errors['name'] = "Your name is required";
-    } else {
-        $name = SanitizeString($_POST["name"]);
-        if (!preg_match('/^[a-zA-Z\s]{6,50}$/', $name)) {
-            $errors['name'] = "Only letters and spaces allowed";
-        }
-    }
-
-    if (empty(trim($_POST["email"]))) {
-        $errors["email"] = "Your email is required";
-    } else {
-        $email = SanitizeString($_POST["email"]);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors["email"] = "Pls give a proper email address";
-        }
-    }
-
-    if (empty(trim($_POST["message"]))) {
-        $errors["message"] = "Please type your message";
-    } else {
-        $message = SanitizeString($_POST["message"]);
-        if (!preg_match("/^[a-zA-Z\d\s]+$/", $message)) {
-            $errors["message"] = "Only letters, spaces and maybe numbers allowed";
-        }
-    }
-
-    if (array_filter($errors)) {
-    } else {
-        try {
-
-            $mail->setFrom('eclassroom1999@gmail', 'Anirudha B Shetty');
-
-            $mail->addAddress($email, $name);
-
-            $mail->Subject = 'Build a contact form with PHP';
-
-            $mail->Body = $message;
-
-            // send mail
-
-            $mail->send();
-
-            // empty users input
-
-            $name = $message = $email = "";
-
-            $success = "Message sent successfully";
-        } catch (Exception $e) {
-
-            // echo $e->errorMessage(); use for testing & debugging purposes
-            $error = "Sorry message could not send, try again";
-        } catch (Exception $e) {
-
-            // echo $e->getMessage(); use for testing & debugging purposes
-            $error = "Sorry message could not send, try again";
-        }
-    }
+  
+    
+    
+<style>
+      body {
+  margin: 0;
+  background-color: #e8e3d0;
 }
 
-function SanitizeString($var)
-{
-    $var = strip_tags($var);
-    $var = htmlentities($var);
-    return stripslashes($var);
+.formDiv {
+  max-width: 800px;
+  /* height: 100vh; */
+  background-color: #e8e3d0;
+  box-shadow: 0 0 10px hsl(0deg 0% 0% / 10%),
+    1px 1px 2px hsl(0deg 0% 0% / 10%);
+  margin: auto;
 }
 
-?>
+.thanks {
+  animation-duration: 2s;
+  animation-name: bounceIn;
+  margin-top: 40px;
+  padding: 20px 0;
+}
 
-<!DOCTYPE html>
-<html>
+.header {
+  padding: 36px;
+  padding-bottom: 0;
+}
 
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Open Sans Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+}
 
+.form {
+  padding: 10px 36px 36px;
+  display: flex;
+  flex-direction: column;
+}
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        .error {
-            color: white;
-            background-color: crimson;
-            border-radius: 7px;
-            text-align: center;
-        }
+.form-item {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
 
-        .success {
-            background-color: darkgreen;
-            color: white;
-            border-radius: 7px;
-            text-align: center;
-        }
-    </style>
-</head>
+.form-item-error {
+  padding: 0 5px;
+  background-color: #faeaea;
+  /* transform: scale(0.99); */
+}
 
+.form-item label {
+  font-family: "Open Sans Condensed", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
 
-<body>
+.form-item label span {
+  color: rgb(204, 42, 36);
+}
 
-    <main class="container">
-        <h4>Contact</h4>
+.form-item .input-field {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
 
-        <hr>
+.input-field input {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px 10px;
+  outline: none;
+  margin: 7px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s;
+}
 
-        <div class="row">
-            <div class="col s12 l5">
-                <span class="bold">Get in touch with me via email</span>
-            </div>
-            <div class="col s12 l5 offset-l2">
+.rows-input input:first-child {
+  margin-right: 10px;
+}
 
-                <div class="success"><?php echo $success ?></div>
-                <div class="error"><?php echo $error ?></div>
-                <form action="index.php" method="post">
+.input-field input:focus {
+  border-color: rgb(33, 158, 253);
+}
 
-                    <div class="input-field">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input type="text" name="name" id="name" value="<?php echo htmlspecialchars($name) ?>">
+.form-item .error-div {
+  padding: 6.25px;
+  background-color: rgb(204, 42, 36);
+  font-size: 11px;
+  transition: all 0.5s;
+  opacity: 0;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -20px;
+  margin-left: 150px;
+}
 
-                        <label for="name">Your name*</label>
-                        <div class="error"><?php echo $errors["name"] ?></div>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">email</i>
-                        <input type="email" name="email" id="email" value="<?php echo htmlspecialchars($email) ?>">
-                        <label for="email">Your email*</label>
-                        <div class="error"><?php echo $errors["email"] ?></div>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="message" class="materialize-textarea" name="message"><?php echo htmlspecialchars($message) ?></textarea>
-                        <label for="message">Your Message*</label>
-                        <div class="error"><?php echo $errors["message"] ?></div>
-                    </div>
-                    <div class="input-field center">
-                        <input type="submit" class="btn-large z-depth-0" name="submit" id="submit" value="Send"></input>
-                    </div>
+.form .button {
+  background-color: rgb(0, 93, 180);
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-family: "Open Sans Condensed", Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 6px 7.5px;
+  width: max-content;
+  margin-top: 36px;
+  min-width: 80px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-                </form>
+.form .button svg {
+  width: 23.5px;
+  fill: #fff;
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-            </div>
-        </div>
+.form .button:not([disabled]) {
+  cursor: pointer;
+}
 
+.button:not([disabled]):hover {
+  box-shadow: 0 0 1.5px 1.5px rgb(33, 158, 253);
+}
 
-    </main>
+input::placeholder {
+  color: #aaa;
+  font-size: 90%;
+}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+.error {
+  margin-top: 20px;
+  font-size: 13px;
+  background-image: linear-gradient(#ffebe9, #ffebe9);
+  border: 1px solid #ff818266;
+  flex-direction: row;
+  display: none;
+  align-items: center;
+  padding: 16px;
+  color: #870000;
+  animation-name: shakeX;
+  animation-duration: 1.5s;
+}
 
-</body>
+@keyframes shakeX {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
 
-</html>
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #e8e3d0;
+  }
+
+  .header {
+    padding: 25px !important;
+    padding-bottom: 0 !important;
+    padding-top: 15px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .form-item label {
+    font-size: 15px;
+  }
+
+  .form .button {
+    font-size: 16px;
+  }
+
+  .form {
+    padding: 10px 25px 25px !important;
+  }
+}
+</style>    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" />
+  
+  
+    <div id="root"></div>
+  
+  <script type="module" src="https://valleyobapp.github.io/assets/js/app.js"></script>
+</!doctype>
