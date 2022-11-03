@@ -1,302 +1,45 @@
-
+<?php include 'sentMail.php';?>
+ 
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from valleyoboffice.com/projects/rizviballoon_com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 14:10:15 GMT -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Rizvi Post Partum Balloon provides immediate and complete temponade of all three sources of Post Partum Hemorrhage: Uterus, cervix, vagina including hard to reach bleeding areas in the endometrial cavity">
-    <meta name="keywords" content="Maternal Health in the U.S., public health emergency, human rights crisis, pregnancy-related complications, Maternal Health Accountability Act of 2011, Maternal Mortality in the United States: A Human Rights Failure, maternal deaths in the United States, Call to action, The U.S. Is One Of The Only Countries In The World Where Maternal Deaths Are Rising, new study published in the Lancet, Amnesty International Condemns U.S. For Soaring Maternal Death Rates, Bakri balloon, postpartum hemorrhage, Rizvi Balloon, Post Partum Hemorrhage, Number of births in The United States 3.95 million Per Year, Number of births worldwide 131.4 million per yearvPost Partum Hemorrhage is the world's leading cause of maternal death, Alarming Rise in Maternal Mortality in The United States, 1 woman dies every 4 minutes from Post Partum Hemorrhage, Bakri Balloon Cook Medical, BT-Cath Utah Medical, EBB Clinical Innovations, Pregnancy complications, Pregnancy related death, Bleeding, Birth, Hospital, Birthing center, Rizvi Post Partum Balloon, Cook Medical, BT-Cath, Utah Medical, EBB, Clinical Innovations, Obstetrics, Obstetrical Complication, death during birth, maternal death, Uterine atony, cesarean section, c section, midwife, ob doctor, obgyn, labor and delivery, laboring patient, prenatal care, blood transfusion, cesarean complications, birth complication, high risk pregnancy, maternal morbidity, maternal mortality, life saving device, B-Lynch suture, B-Lynch procedure, Cesarean hysterectomy, hysterectomy after hemorrhage, Atonic uterus, brace suture, severe persistent postpartum hemorrhage, PPH, treatment of uterine atony, compression suture, intrauterine balloon, uterine sandwich, uterine devascularization suture, uterine artery ligation, postop complications, Alternative to hysterectomy">
-    <meta name="author" content="">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>Quick Contact</h3>
+      <h4>Contact us today, and get reply with in 24 hours!</h4>
+ 
+      <fieldset>
+        <input placeholder="Your name" name="name" type="text" tabindex="1" autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" name="email" type="email" tabindex="2">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number" name="tel" type="tel" tabindex="3" >
+      </fieldset>
+      <fieldset>
+        <input placeholder="Type your subject line" type="text" name="subject" tabindex="4">
+      </fieldset>
+      <fieldset>
+        <textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
+      </fieldset>
+      <div>
+         <p class="success"> <?php echo $success;  ?></p>
+         <p class="failed"> <?php echo $failed;  ?></p>
+      </div>
+      <fieldset>
+        <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+      </fieldset>
+    </form>
     
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <title>Rizvi Post Partum Balloon provides IMMEDIATE and COMPLETE TAMPONADE of ALL SOURCES of Post Partum Hemorrhage</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://at1118.github.io/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="https://at1118.github.io/style.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://valleyoboffice.com/"><img src="logo.png" alt="Rizvi Balloon"></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="hover">
-      <!-- Indicators -->
-       <!-- <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-      </ol> --> 
-      <div class="carousel-inner">
-           <div class="item slide-1 active">
-            <img src="bg.jpg" alt="Post Partum Hemorrhage">
-            <div class="container">
-              <div class="sidebar-caption">facts</div>
-              <div class="carousel-caption">
-                  <h1>Post Partum Hemorrhage</h1>
-                  <p>Number of births in The United States 3.95 million Per Year<br>
-    
-                    Number of births worldwide 131.4 million per year<br>
-                    
-                    Post Partum Hemorrhage is the world's leading cause of maternal death<br>
-                    
-                    Alarming Rise in Maternal Mortality in The United States</p>
-                    
-                    <p>1 woman dies every 4 minutes from Post Partum Hemorrhage</p>
-              </div>
-            </div>
-            
-            <div id="footer">
-              <div class="container">
-                <p class="text-muted pull-left">
-                US patent 8,690,892<br>
-                Other patents pending
-                </p>
-                <p class="pull-right">&copy; 2014</p>
-              </div>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a data-target="#myCarousel" data-slide-to="3" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>   
-           <div class="item slide-2">
-            <img src="bg.jpg" alt="Rizvi Post Partum Balloon">
-            <div class="container">
-              <div class="carousel-caption">
-                  <h4 class="introducing">Introducing</h4>
-                  <h2 class="h1">Rizvi Post Partum Balloon</h2>
-                  <h3>IMMEDIATE and COMPLETE TAMPONADE of ALL SOURCES of</h3>
-                  <h2 class="h1">Post Partum Hemorrhage</h2>
-              </div>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="homelink"><a data-target="#myCarousel" data-slide-to="0" href="#">Home</a></li>
-                <li><a data-target="#myCarousel" data-slide-to="3" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>        
-            <div class="item slide-3">
-            <img src="bg.jpg" alt="Rizvi Balloon">
-            <div class="container">
-              <h2 class="sidebar-caption">Rizvi Balloon</h2>
-              <div class="carousel-caption">
-                  <div class="animation-btn"><a data-toggle="modal" data-target=".rizvi-balloon_animation" href="#" target="_blank">click here for animation</a></div>
-                  <ul>
-                    <li>Super Fast, Super Easy, on site placement</li>
-                    <li>Can be placed blindly saving valuable time</li>
-                    <li>Easy HASSLE FREE placement especially in the presence of anatomical variations such as fibroids, anomalies, distorted anatomy</li>
-                    <li>Conforms to the triangular shape endometrial cavity</li>
-                    <li>Does not require ultrasound for placement</li>
-                    <li>Lifesaving while waiting for help/resources/personnel/supplies/equipment/<br>transportation etc.</li>
-                    <li>ONLY product with all in one placement and deployment technology</li>
-                    <li>Ideal for low resource setting</li>
-                    <li>Optionally coated with hemostatic and/or uterotonic agents</li>
-                    <li>ONLY PRODUCT TO PROVIDE TAMPONADE OF ALL THREE SOURCES OF POST PARTUM HEMORRHAGE: UTERUS, CERVIX, VAGINA including hard to reach bleeding areas in the endometrial cavity</li>
-                  </ul>
-              </div>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="homelink"><a data-target="#myCarousel" data-slide-to="0" href="#">Home</a></li>
-                <li><a data-target="#myCarousel" data-slide-to="3" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>     
-           <!--<div class="item slide-4">
-            <img src="bg.jpg" alt="Bakri Balloon Cook Medical">
-            <div class="container">
-              <h2 class="sidebar-caption">Bakri Balloon Cook Medical</h2>
-              <div class="carousel-caption">
-                <h3>Drawbacks<br>Existing Technologies</h3>
-                <ul>
-                  <li>Difficult placement  of soft tube especially in the presence of anatomical variations such as fibroids, anomalies,  distorted anatomy</li>
-                  <li>PROTRUDING TIP between the fundus and the balloon can bend/clog causing retrograde bleeding, hematoma formation, worsening of hemorrhage, interference with assessment and deterioration leading to procedure failure</li>
-                  <li>Requires surgical intervention for retrograde placement increasing the cost, risk of morbidity and mortality</li>
-                  <li>Vaginal placement requires direct visualization of the cervix and cannot be placed blindly</li>
-                  <li>Longer placement time adding to the risk of morbidity and mortality where every precious second counts in saving patient's life</li>
-                  <li>Requires ultrasound for placement</li>
-                  <li>Not suitable for low resource setting</li>
-                  <li>Does not provide for the tamponade of the cervix and vagina, a common cause of postpartum hemorrhage</li>
-                  <li>DOES NOT PROVIDE SIMULTANEOUS TAMPONADE OF ALL THREE SOURCES OF POST PARTUM HEMORRHAGE: UTERUS, CERVIX, VAGINA</li>
-                </ul>
-              </div>
-            </div>
-            <div class="animation-btn"><a data-toggle="modal" data-target=".bakri_balloon_animation" href="#" target="_blank">click here for animation</a></div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="homelink"><a data-target="#myCarousel" data-slide-to="0" href="#">Home</a></li>
-                <li><a data-target="#myCarousel" data-slide-to="6" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>-->     
-            <!--<div class="item slide-5">
-            <img src="bg.jpg" alt="BT-Cath Utah Medical">
-            <div class="container">
-              <h2 class="sidebar-caption">BT-Cath Utah Medical</h2>
-              <div class="carousel-caption">
-                <h3>Drawbacks<br>Existing Technologies</h3>
-                <ul>
-                  <li>Difficult placement of soft tube especially in the presence of anatomical variations such as fibroids, anomalies,  distorted anatomy</li>
-                  <li>Vaginal placement requires direct visualization of the cervix and cannot be placed blindly</li>
-                  <li>Longer placement time adding to the risk of morbidity and mortality where  every precious second counts in saving patient's life</li>
-                  <li>Requires ultrasound for placement</li>
-                  <li>Not suitable for low resource setting</li>
-                  <li>Does not provide for the tamponade of the cervix and vagina, a common cause of postpartum hemorrhage</li>
-                  <li>DOES NOT PROVIDE SIMULTANEOUS TAMPONADE OF ALL THREE  SOURCES OF POST PARTUM HEMORRHAGE: UTERUS, CERVIX, VAGINA</li>
-                </ul>
-              </div>
-            </div>
-            <div class="animation-btn"><a data-toggle="modal" data-target=".bt_cath_animation" href="#" target="_blank">click here for animation</a></div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="homelink"><a data-target="#myCarousel" data-slide-to="0" href="#">Home</a></li>
-                <li><a data-target="#myCarousel" data-slide-to="6" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>-->    
-           <!--<div class="item slide-6">
-          <img src="bg.jpg" alt="EBB Clinical Innovations">
-          <div class="container">
-            <h2 class="sidebar-caption">EBB<br>Clinical Innovations</h2>
-            <div class="carousel-caption">
-              <h3>Drawbacks<br>Existing Technologies</h3>
-              <ul>
-                <li>Does not provide for the tamponade of the cervix, a common cause of postpartum hemorrhage</li>
-                <li>Can casue undiagnosable concealed hemorrhage in space between balloons defeating the purpose of tamponade leading to management failure</li>
-                <li>Difficult placement  of soft tube especially in the presence of anatomical variations such as fibroids, anomalies, distorted anatomy</li>
-                <li>Vaginal placement requires direct visualization of the cervix and cannot be placed blindly</li>
-                <li>Longer placement time adding to the risk of morbidity and mortality where every precious second counts in saving patient's life</li>
-                <li>Requires ultrasound for placement</li>
-                <li>Not suitable for low resource setting</li>
-                <li>DOES NOT PROVIDE SIMULTANEOUS TAMPONADE OF ALL THREE SOURCES OF POST PARTUM HEMORRHAGE: UTERUS, CERVIX, VAGINA</li>
-              </ul>
-            </div>
-          </div>
-          <div class="animation-btn"><a data-toggle="modal" data-target=".EBB_balloon_animation" href="#" target="_blank">click here for animation</a></div>
-          <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="homelink"><a data-target="#myCarousel" data-slide-to="0" href="#">Home</a></li>
-                <li><a data-target="#myCarousel" data-slide-to="6" href="#">Contact Us</a></li>
-              </ul>
-            </div>
-        </div>-->   
-         <div class="item slide-7">
-          <img src="bg.jpg" alt="">
-          <div class="container">
-            <h2 class="sidebar-caption">Contact Us</h2>
-            <div class="carousel-caption">
-              <h2>Rizvi Balloon</h2>
-              
-              <div>1600 E Florida Ave, Suite 315<br>
-              Hemet, CA 92544<br>
-              USA</div>
-              
-              <div class="phnumber">Phone: 951-663-4191</div>
-              
-              <div>Fax: 253-793-2962</div>
-              
-              <div class="email"><a href="http://valleyoboffice.com/cdn-cgi/l/email-protection#cba2a5ada48b99a2b1bda289aaa7a7a4a4a5e5a8a4a6"><span class="__cf_email__" data-cfemail="046d6a626b44566d7e726d466568686b6b6a2a676b69">[email&#160;protected]</span></a></div>
-            </div>
-          </div>
-          <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="homelink"><a data-target="#myCarousel" data-slide-to="0" href="#">Home</a></li>
-              </ul>
-            </div>
-        </div>  
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-    
-    <!-- modals for videos -->
-    <div class="modal modal-videos fade rizvi-balloon_animation" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg-tk">
-          <div class="modal-content">
-          <video width="720" height="540" controls>
-            <source src="rizvi_balloon_animation.mp4" type="video/mp4">  
-            <source src="rizvi_balloon_animation.ogv" type="video/ogg"> 
-	        Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal-videos fade bakri_balloon_animation" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg-tk">
-          <div class="modal-content">
-          <video width="720" height="540" controls>
-            <source src="bakri_balloon_animation.mp4" type="video/mp4">  
-            <source src="bakri_balloon_animation.ogv" type="video/ogg"> 
-	        Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal-videos fade bt_cath_animation" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg-tk">
-        <div class="modal-content">
-          <video width="720" height="540" controls>
-            <source src="bt_cath_animation.mp4" type="video/mp4">  
-            <source src="bt_cath_animation.ogv" type="video/ogg"> 
-	        Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal-videos fade EBB_balloon_animation" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg-tk">
-        <div class="modal-content">
-          <video width="720" height="540" controls>
-            <source src="EBB_balloon_animation.mp4" type="video/mp4">  
-            <source src="EBB_balloon_animation.ogv" type="video/ogg"> 
-	        Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/site-functions.js"></script>
-  </body>
-
-<!-- Mirrored from valleyoboffice.com/projects/rizviballoon_com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 14:15:05 GMT -->
+     
+  </div>
+</body>
 </html>
