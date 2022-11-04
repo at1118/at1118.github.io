@@ -1,0 +1,20 @@
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSebKWu5ArXnkk-rf27Nwdf3HseMDhdVMTrnDpPS3ojIIsqLog/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  First name:<br>
+  <input type="text" name="entry.1348136568" id="entry.1348136568"><br>
+  Last name:<br>
+  <input type="text" name="entry.259383045" id="entry.259383045">
+  <input type="submit" value="Submit">
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+
+https://docs.google.com/forms/d/e/1FAIpQLSebKWu5ArXnkk-rf27Nwdf3HseMDhdVMTrnDpPS3ojIIsqLog/viewform?usp=pp_url&entry.1348136568=customerFirstName&entry.259383045=customerLastName
