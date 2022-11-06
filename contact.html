@@ -1,18 +1,65 @@
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSebKWu5ArXnkk-rf27Nwdf3HseMDhdVMTrnDpPS3ojIIsqLog/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-  <p>First name:</p><br>
-  <input type="text" name="entry.1348136568" id="entry.1348136568"><br>
-  <p>Last name:</p><br>
-  <input type="text" name="entry.259383045" id="entry.259383045">
-  <input type="submit" value="Submit">
-</form>
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-<script src="jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
+<form class="contact-form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeveEPOurM9l82Oc8uVadyNsKc-uDw48p9LXTH-t64_00g5TA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    <input class="row-contact1" placeholder="Name" type="text" name="entry.580617010" id="entry.580617010"><br>
+    <input class="row-contact2" placeholder="Email" type="text" name="entry.1373710871" id="entry.1373710871"><br>
+    <textarea class="row-contact3" rows="5" placeholder="Message" type="text" name="entry.2106987582" id="entry.2106987582"></textarea><br>
+    <input class="submit-form" type="submit" value="Send">
+  </form>
+  
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+  
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+    });
+  </script>
+  <style>
+    .contact-form{
+        margin-left: 500px;
+        margin-top: 200px;
+        width: 400px;
+        background-color: #dbdbdb;
+    }
+    .row-contact3{
+        float: center;
+        border: none;
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 7.5px;
+        width: 385px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .row-contact2{
+        float: center;
+        border: none;
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 7.5px;
+        height: 30px;
+        width: 385px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .row-contact1{
+        float: center;
+        border: none;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 7.5px;
+        height: 30px;
+        width: 385px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .submit-form{
+        background-color: black;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 120px;
+        width: 160px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        height: 30px;
+        border-radius: 15px;
+    }
+  </style>
