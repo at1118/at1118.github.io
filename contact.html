@@ -12,7 +12,7 @@
   <script type="text/javascript">
   $('#gform').on('submit', function(e) {
     $('#gform *').fadeOut(2000);
-    $('#gform').prepend('<div class="paragraph"> Your Message Has Been Sent! </div>');
+    $('#gform').prepend('Your Message Has Been Sent!');
     });
   </script>
   <style>
@@ -20,6 +20,7 @@
         margin-left: 500px;
         margin-top: 200px;
         width: 400px;
+        height: 300px;
         background-color: #dbdbdb;
     }
     .row-contact3{
@@ -61,10 +62,5 @@
         margin-bottom: 10px;
         height: 30px;
         border-radius: 15px;
-    }
-    .paragraph{
-        background-color: #dbdbdb;
-        width: 400px;
-        height: 500px;
     }
   </style>
