@@ -4,8 +4,6 @@
     <textarea class="row-contact3" rows="5" placeholder="Message" type="text" name="entry.2106987582" id="entry.2106987582" required="yes"></textarea><br>
     <input class="submit-form" type="submit" value="Send">
   </form>
-<div id="gformsuccess" class="success">
-</div>
   
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   
@@ -13,8 +11,8 @@
   <script type="text/javascript">var submitted=false;</script>
   <script type="text/javascript">
   $('#gform').on('submit', function(e) {
-    $('##gform *').fadeOut(2000);
-    $('#gformsuccess').prepend('Your Message Has Been Sent!');
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your Message Has Been Sent!');
     });
   </script>
   <style>
@@ -63,11 +61,5 @@
         margin-bottom: 10px;
         height: 30px;
         border-radius: 15px;
-    }
-    . success{
-        margin-left: 500px;
-        margin-top: 200px;
-        width: 400px;
-        background-color: #dbdbdb;
     }
   </style>
