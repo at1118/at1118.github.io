@@ -424,8 +424,8 @@ div#html5-watermark { display:none !important;}
 .contact-form{
 	position: relative;
 	z-index: 10;
-	margin-left: -50px;
-	margin-top: 0px;
+	margin-left: -40px;
+	margin-top: -10px;
 	width: 305px;
 	height: 360px;
 	background-color: #dbdbdb;
