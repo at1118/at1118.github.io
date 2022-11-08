@@ -420,3 +420,55 @@ div#html5-watermark { display:none !important;}
 
 /* IE fix non responsive fix */
 .img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{width:777px \9;width:777px;max-width:777px;}
+
+.contact-form{
+	position: relative;
+	z-index: 10;
+	margin-left: -50px;
+	margin-top: 0px;
+	width: 305px;
+	height: 340px;
+	background-color: #dbdbdb;
+}
+.row-contact3{
+	float: center;
+	border: none;
+	background-color: white;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 385px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row-contact2{
+	float: center;
+	border: none;
+	background-color: white;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 30px;
+	width: 385px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row-contact1{
+	float: center;
+	border: none;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 30px;
+	width: 385px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.submit-form{
+	background-color: black;
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 160px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	height: 30px;
+	border-radius: 15px;
+}
