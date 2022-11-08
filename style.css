@@ -425,7 +425,7 @@ div#html5-watermark { display:none !important;}
 	position: relative;
 	z-index: 10;
 	margin-left: -40px;
-	margin-top: -10px;
+	margin-top: -40px;
 	width: 305px;
 	height: 360px;
 	background-color: #dbdbdb;
