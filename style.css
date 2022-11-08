@@ -89,6 +89,7 @@ h3, .h3 {font-size: 20px; text-align:center;}
 .slide-7 .carousel-caption .email a { color: #404040;}
 .slide-7 .carousel-caption .email a:hover { opacity:.8;}
 .slide-7 .carousel-caption div.phnumber {margin-bottom: 7px;}
+.slide-7 .carousel-caption form { position: relative; z-index: 10; background-color: #dbdbdb;  width: 400px;}
 
 .carousel .item a:hover { text-decoration:none;}
 .nav>li>a:hover, .nav>li>a:focus {background-color: #fff;}
