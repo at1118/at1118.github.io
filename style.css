@@ -463,7 +463,8 @@ div#html5-watermark { display:none !important;}
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .submit-form{
-	background-color: black;
+	background-color: #d8043e;
+	border-color: #d8043e;
 	color: white;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	width: 160px;
