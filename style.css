@@ -96,7 +96,7 @@ h3, .h3 {font-size: 20px; text-align:center;}
 .carousel-caption ul li {line-height: 1.2;margin-bottom: 4px;text-align: left;}
 .carousel-caption ul li, .carousel-caption p {letter-spacing: -.043em;}
 .animation-btn {text-align:center;}
-.animation-btn a {color:#d8043e;font-family: 'Verdana'; font-size:20px; outline:none; text-decoration:none;}
+.animation-btn a {color:#d8043e;font-family: 'Verdana, Geneva, Tahoma, sans-serif'; font-size:20px; outline:none; text-decoration:none;}
 .sidebar-caption {color: #181818;}
 
 .text-muted {color: #404040;position: relative;}
@@ -425,7 +425,7 @@ div#html5-watermark { display:none !important;}
 	position: relative;
 	z-index: 10;
 	margin-left: -40px;
-	margin-top: -40px;
+	margin-top: -30px;
 	width: 305px;
 	height: 360px;
 	background-color: #dbdbdb;
