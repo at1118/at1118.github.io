@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'annifontitalic';
-    src: url('../fonts/annifont-webfont.eot');
-    src: url('../fonts/annifont-webfontd41d.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/annifont-webfont.woff2') format('woff2'),
-         url('../fonts/annifont-webfont.woff') format('woff'),
-         url('../fonts/annifont-webfont.ttf') format('truetype'),
-         url('../fonts/annifont-webfont.svg#annifontitalic') format('svg');
+    src: url('../annifont-webfont.eot');
+    src: url('../annifont-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../annifont-webfont.woff2') format('woff2'),
+         url('../annifont-webfont.woff') format('woff'),
+         url('../annifont-webfont.ttf') format('truetype'),
+         url('../annifont-webfont.svg#annifontitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
